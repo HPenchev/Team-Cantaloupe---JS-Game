@@ -1,0 +1,8 @@
+#game-frame{
+    width: 400px;
+    height: 500px;
+    background-color: lightblue;
+}
+body{
+    margin: 40px;
+}
