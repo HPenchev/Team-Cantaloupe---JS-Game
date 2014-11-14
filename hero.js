@@ -1,21 +1,29 @@
 function Player(){
-    this.x = 300;
-    this.y = 400;
-    this.w = 40;
-    this.h = 40;
-    this.render = function(ctx, x, y, w, p) {
-        ctx.fillRect(this.x, this.y, this.w, this.h);
-    }
+    this.x = 150;
+    this.y = 350;
+    var nerd = new Image();
+    nerd.src = "img/nerdLeft.png";
+    this.render = function() {
+        ctx.drawImage(nerd,this.x,this.y);
 
+    };
     document.addEventListener('keydown', function(event){
         var key_press = event.keyCode;
         //alert(key_press);
         if(key_press == "37"){
-            player.x-=6;
+            player.x-=10;
+
+
         }
         if(key_press == "39"){
-            player.x+=6;
-        }
+            player.x+=10;
 
+        }
     })
+
+
+
+
+
+
 }

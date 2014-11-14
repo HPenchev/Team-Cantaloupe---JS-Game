@@ -4,5 +4,9 @@
     background-color: lightblue;
 }
 body{
-    margin: 40px;
+    margin: 40px
+}
+canvas{
+    display: block;
+    margin: 0 auto;
 }

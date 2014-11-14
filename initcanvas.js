@@ -1,10 +1,11 @@
 /**
  * Created by Ico on 8.11.2014 г..
  */
+
 window.addEventListener('load', function(event){
     initcanvas();
 
-})
+});
 function initcanvas(){
     ctx = document.getElementById("game-frame").getContext('2d');
     ctx.fillRect(220, 300, 50, 50);
@@ -31,7 +32,4 @@ function initcanvas(){
     }
 
     var animateInterval = setInterval(animate, 30);
-
-
-
 }
