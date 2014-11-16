@@ -4,32 +4,42 @@
 }
 
 body{
-    background: url(../img/SoftUni-Wallpaper-1440-900.png);
+    background: url(../img/siteBackground.jpg) no-repeat center center;
+    background-size: cover;
 
 }
 section{
     width: 500px;
     height: 500px;
     margin: 0 auto;
-    border: 1px solid black;
+    margin-top: 7%;
 }
 h1{
     font-family: Hacked,sans-serif;
-    color: gray;
+    color: white;
     font-size: 60px;
-    margin: 0;
+    margin: 0 ;
+    text-align: center;
 
 }
 button{
     width: 50%;
     height: 10%;
+
     background-color: rgba(48,81,128,0.5);
     border: 2px solid #2e5175;
-    color: black;
+    color: white;
     font-size: 16px;
     font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50%;
+}
+a{
+    text-decoration: none;
 }
 button:hover{
     background-color: rgba(48,81,128,1);
     cursor: pointer;
+    transition: 0.25s;
 }
