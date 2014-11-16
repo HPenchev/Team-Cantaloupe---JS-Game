@@ -1,6 +1,8 @@
 /**
  * Created by Ico on 12.11.2014 г..
  */
+var beer = new Image();
+beer.src = "img/brittle_fracture.png";
 function rectObj(){
     var x = Math.random()*310+10;
     var y = -10;

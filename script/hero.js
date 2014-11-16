@@ -2,7 +2,7 @@ function Player(){
     this.x = 150;
     this.y = 350;
     var nerd = new Image();
-    nerd.src = "img/nerdLeft.png";
+    nerd.src = "../img/nerdLeft.png";
     this.render = function() {
         ctx.drawImage(nerd,this.x,this.y);
 
