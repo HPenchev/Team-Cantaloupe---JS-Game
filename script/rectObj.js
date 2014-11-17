@@ -12,14 +12,15 @@ function rectObj(){
 
 }
 function enemiesComing(){
-
+	var beer = new Image();
+    beer.src = "../img/brittle_fracture.png";
     if(enemyInterval==10){
         rectObj();
         enemyInterval = 0;
     }
     enemyInterval++;
     for(var i = 0; i<enemies.length; i++){
-        ctx.fillRect(enemies[i].x, enemies[i].y, enemies[i].w, enemies[i].h);
+        ctx.drawImage(beer, enemies[i].x, enemies[i].y);;
         enemies[i].y++;
         if(enemies[i].y>500){
             enemies.splice(i, 1);
