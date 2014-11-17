@@ -2,7 +2,7 @@ var keys = [false, false];
 
 function Player(){
     this.x = 150;
-    this.y = 350;
+    this.y = 370;
     var nerd = new Image();
     nerd.src = "../img/nerdLeft.png";
     this.render = function() {
