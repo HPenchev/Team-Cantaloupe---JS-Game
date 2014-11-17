@@ -41,5 +41,5 @@ a{
 button:hover{
     background-color: rgba(48,81,128,1);
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.35s;
 }
