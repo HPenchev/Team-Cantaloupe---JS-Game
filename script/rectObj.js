@@ -25,6 +25,8 @@ function enemiesComing(){
     enemyInterval++;
     for(var i = 0; i<enemies.length; i++){
         ctx.drawImage(beer, enemies[i].x, enemies[i].y);
+		ctx.drawImage(girl, enemies[i].x, enemies[i].y);
+		ctx.drawImage(discoBall, enemies[i].x, enemies[i].y)
         enemies[i].y++;
         if(enemies[i].y>500){
             enemies.splice(i, 1);
