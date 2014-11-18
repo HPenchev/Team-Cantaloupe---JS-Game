@@ -14,7 +14,7 @@ function rectObj(){
 function enemiesComing(){
 	var beer = new Image();
     beer.src = "../img/brittle_fracture.png";
-    if(enemyInterval==30){
+    if(enemyInterval==50){
         rectObj();
         enemyInterval = 0;
     }
