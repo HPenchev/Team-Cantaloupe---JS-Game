@@ -2,24 +2,22 @@
  * Created by Ico on 12.11.2014 г..
  */
 var beer = new Image();
-beer.src = "img/brittle_fracture.png";
-function rectObj(){
-    var x = Math.random()*310+10;
-    var y = -10;
-    var w=30;
-    var h=30;
-    enemies.push({'x':x, 'y':y, 'w':w, 'h':h});
-
+beer.src = "../img/brittle_fracture.png";
+var girl = new Image();
+girl.src = "../img/girl.png";
+var discoBall = new Image();
+discoBall.src = "../img/disco-ball.png";
+function RectObj() {
+   this.x = Math.random()*310+10;
+   this.y = -10;
+   this.w = 30;
+   this.h = 30;
 }
+
 function enemiesComing(){
-	var beer = new Image();
-    beer.src = "../img/brittle_fracture.png";
-	var girl = new Image();
-	girl.src = "../img/girl.png";
-	var discoBall = new Image();
-	discoBall.src = "../img/disco-ball.png";
+
     if(enemyInterval==50){
-        rectObj();
+        enemies.push(new RectObj());
         enemyInterval = 0;
     }
     enemyInterval++;

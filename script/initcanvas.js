@@ -1,7 +1,7 @@
 /**
  * Created by Ico on 8.11.2014 г..
  */
-
+var ctx;
 window.addEventListener('load', function(event){
     initcanvas();
 
@@ -15,8 +15,8 @@ function initcanvas(){
     enemyInterval = 0;
 
     enemies = [];
-//    var rect1 = new rectObj();
-//    var rect2 = new rectObj();
+//    var rect1 = new RectObj();
+//    var rect2 = new RectObj();
     player = new Player();
     bullets = [];
 
@@ -28,6 +28,7 @@ function initcanvas(){
         ctx.clearRect(0, 0, cW, cH);
         enemiesComing();
         bulletsComing();
+        //hitDetection();
 
         player.render(ctx, player.x, player.y, player.w, player.h);
         enemyInterval++;
