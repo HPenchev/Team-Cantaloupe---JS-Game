@@ -14,6 +14,10 @@ function rectObj(){
 function enemiesComing(){
 	var beer = new Image();
     beer.src = "../img/brittle_fracture.png";
+	var girl = new Image();
+	girl.src = "../img/girl.png"
+	var discoBall = new Image();
+	discoBall.src = "../img/disco-ball.png"
     if(enemyInterval==50){
         rectObj();
         enemyInterval = 0;
