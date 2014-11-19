@@ -67,8 +67,9 @@ function healthDisplay(){
 function GameOverDisplay(){
     ctx.fillStyle="red";
     ctx.font=" 25px  Arial";
-    ctx.fillText("Game Over",90,200);
-    ctx.fillText("You`re not a nerd anymore",15,240);
+    ctx.fillText("Game Over",120,200);
+    ctx.fillText("You`re not a nerd anymore",30,240);
+
 }
 function drawScore(){
     ctx.fillStyle="red";
