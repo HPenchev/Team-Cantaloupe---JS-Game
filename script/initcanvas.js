@@ -29,7 +29,9 @@ function initcanvas(){
         enemiesComing();
         bulletsComing();
         //hitDetection();
-
+        if (lives == 0) {
+            clearInterval(animateInterval);
+        }
         player.render(ctx, player.x, player.y, player.w, player.h);
         enemyInterval++;
         ctx.restore();

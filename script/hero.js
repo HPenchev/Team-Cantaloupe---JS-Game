@@ -22,7 +22,7 @@ function Player(){
 //        if(keys[0]){
 //            player.x-=6;
 //        }
-        if((key_press == "39")&&(player.x<290)){
+        if((key_press == "39")&&(player.x<291)){
 //            keys[1] = true;
             player.x+=10;
         }

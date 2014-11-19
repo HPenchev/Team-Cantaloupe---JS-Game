@@ -5,7 +5,7 @@ function Bullet(){
     this.h = 10;
 }
 
-document.addEventListener('keydown', function(event){
+document.addEventListener('keyup', function(event){
     if(event.keyCode == 32){
         bullets.push(new Bullet());
     }
