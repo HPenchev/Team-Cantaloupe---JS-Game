@@ -1,3 +1,4 @@
+var score=1;
 function Bullet(){
     this.x = player.x + 30;
     this.y = player.y + 12;
@@ -35,6 +36,7 @@ function bulletsComing(){
         if (bullets.length) {
             hitDetection(bullets[i], i);
         }
+        drawScore();
     }
 }
 
@@ -44,8 +46,9 @@ function hitDetection(bullet, pos){
             enemies[j].y + enemies[j].h >= bullet.y - 3 * bullet.h && enemies[j].y + enemies[j].h <= bullet.y){
             bullets.splice(pos, 1);
             //console.log(pos);
-
+            score++;
             enemies.splice(j, 1);
+
         }
     }
 }

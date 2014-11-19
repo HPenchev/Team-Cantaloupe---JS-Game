@@ -8,6 +8,7 @@ girl.src = "../img/girl.png";
 var discoBall = new Image();
 discoBall.src = "../img/disco-ball.png";
 var lives = 3;
+var level = 1;
 
 function RectObj() {
    this.x = Math.random()*300+10;
@@ -23,8 +24,21 @@ function enemiesComing(){
         enemies.push(new RectObj());
         enemyInterval = 0;
     }
+
     enemyInterval++;
+
+    if(score % 11 == 0){
+        level = level + 0.3;
+        lives += 1;
+        score++;
+    }
+
+
     for(var i = 0; i<enemies.length; i++){
+        if(lives==0){
+            GameOverDisplay();
+            break;
+        }
         if(enemies[i].p == 0){
             ctx.drawImage(beer, enemies[i].x, enemies[i].y);
         } else if(enemies[i].p == 1){
@@ -34,11 +48,32 @@ function enemiesComing(){
         }
 
 
-
-        enemies[i].y++;
-        if(enemies[i].y>500){
+        enemies[i].y += level;
+        if(enemies[i].y>455){
             enemies.splice(i, 1);
-            lives--;
+            --lives;
+
         }
+        healthDisplay();
+        drawScore();
     }
 }
+function healthDisplay(){
+    ctx.fillStyle="red";
+    ctx.font=" 20px  Arial";
+    ctx.fillText("Life:"+lives,10,20);
+}
+
+function GameOverDisplay(){
+    ctx.fillStyle="red";
+    ctx.font=" 25px  Arial";
+    ctx.fillText("Game Over",90,200);
+    ctx.fillText("You`re not a nerd anymore",15,240);
+}
+function drawScore(){
+    ctx.fillStyle="red";
+    ctx.font=" 20px  Arial";
+    ctx.fillText("Score:"+score,8,40);
+    document.getElementById(getScore);
+}
+var getScore=document.getElementById("score");
