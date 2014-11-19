@@ -1,4 +1,4 @@
-var score=1;
+var score= 1;
 function Bullet(){
     this.x = player.x + 30;
     this.y = player.y + 12;

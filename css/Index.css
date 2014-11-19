@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Hacked;
-    src: url(../fonts/HACKED.ttf);
+    font-family: computed;
+    src: url(../fonts/Old%20computer%20St.ttf);
 }
 
 body{
@@ -15,8 +15,8 @@ section{
     margin-top: 7%;
 }
 h1{
-    font-family: Hacked,sans-serif;
-    color: white;
+    font-family: computed,sans-serif;
+    color: black;
     font-size: 60px;
     margin: 0 ;
     text-align: center;
@@ -37,7 +37,6 @@ button{
     font-weight: bold;
     margin: 0 auto;
     display: block;
-    margin-top: 15%
 }
 a{
     text-decoration: none;

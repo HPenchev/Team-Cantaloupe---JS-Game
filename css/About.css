@@ -1,0 +1,19 @@
+@font-face {
+    font-family: computed;
+    src: url(../fonts/Old%20computer%20St.ttf);
+}
+
+body{
+    background: url(../img/siteBackground.jpg) no-repeat center center;
+    background-size: cover;
+}
+h1{
+    font-family: computed,sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-top: 10%;
+    text-align: center;
+}
+img {
+    -webkit-filter: grayscale(100%);
+}
