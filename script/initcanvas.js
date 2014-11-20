@@ -8,15 +8,12 @@ window.addEventListener('load', function(event){
 });
 function initcanvas(){
     ctx = document.getElementById("game-frame").getContext('2d');
-    //ctx.fillRect(220, 300, 50, 50);
     var cW = ctx.canvas.width;
     var cH = ctx.canvas.height;
     var y = 0;
     enemyInterval = 0;
 
     enemies = [];
-//    var rect1 = new RectObj();
-//    var rect2 = new RectObj();
     player = new Player();
     bullets = [];
 
@@ -28,7 +25,6 @@ function initcanvas(){
         ctx.clearRect(0, 0, cW, cH);
         enemiesComing();
         bulletsComing();
-        //hitDetection();
         if (lives == 0) {
             clearInterval(animateInterval);
         }

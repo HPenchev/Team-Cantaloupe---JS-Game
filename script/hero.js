@@ -12,24 +12,14 @@ function Player(){
 
     document.addEventListener('keydown', function(event){
         var key_press = event.keyCode;
-        //alert(key_press);
 
         if((key_press == "37")&&(player.x>-20)){
-//            keys[0] = true;
             player.x-=10;
         }
 
-//        if(keys[0]){
-//            player.x-=6;
-//        }
         if((key_press == "39")&&(player.x<290)){
-//            keys[1] = true;
             player.x+=10;
         }
-//        if(keys[1]){
-//            player.x+=6;
-//        }
-
     })
 
 }

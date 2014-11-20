@@ -40,11 +40,11 @@ function enemiesComing(){
             break;
         }
         if(enemies[i].p == 0){
-            ctx.drawImage(beer, enemies[i].x, enemies[i].y);
+            ctx.drawImage(beer, enemies[i].x + 10, enemies[i].y + 20);
         } else if(enemies[i].p == 1){
-            ctx.drawImage(girl, enemies[i].x, enemies[i].y);
+            ctx.drawImage(girl, enemies[i].x + 5, enemies[i].y - 10);
         } else{
-            ctx.drawImage(discoBall, enemies[i].x, enemies[i].y);
+            ctx.drawImage(discoBall, enemies[i].x + 5, enemies[i].y + 20);
         }
 
 
